@@ -1,6 +1,8 @@
-gulp-prefix
+gulp4-prefix
 =========
 [![Build Status](https://travis-ci.org/007design/gulp-prefix.svg?branch=master)](https://travis-ci.org/007design/gulp-prefix)
+
+modify by gulp-prefix, support gulp4
 
 A gulp plugin inspired by [html-prefixer](https://github.com/tivac/node-html-prefixer).
 
@@ -43,7 +45,7 @@ If you have tags which you do not want to prefix, you can pass a third argument 
 ###Usage
 ```javascript
 var gulp = require('gulp'),
-    prefix = require('gulp-prefix');
+    prefix = require('gulp4-prefix');
 
 gulp.task('prefix', function(){
   var prefixUrl = "http://mydomain.com/assets";
