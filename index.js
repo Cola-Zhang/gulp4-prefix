@@ -59,7 +59,11 @@ module.exports = function(prefix, selectors, ignore) {
         cb(null, file);
       }));
 
-      file.pipe(tr);
+      if ( file.isStream() ) {
+        file.contents.pipe( tr );
+      } else if ( file.isBuffer() ) {
+        tr.end( file.contents );
+      } 
     } 
   });
 };
